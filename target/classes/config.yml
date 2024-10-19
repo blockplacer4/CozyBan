@@ -1,0 +1,82 @@
+# Dies ist die Hauptkonfigurationsdatei für das CozyBan-Plugin.
+# Hier können Sie alle Einstellungen anpassen, um das Verhalten des Plugins zu steuern.
+
+# Präfix, das vor allen Plugin-Nachrichten angezeigt wird.
+prefix: '&7[&cCozyBan&7] '
+
+# Datenbankeinstellungen für die MySQL-Verbindung.
+mysql:
+  host: localhost       # Adresse des Datenbankservers.
+  port: 3306            # Port des Datenbankservers.
+  database: cozyban     # Name der Datenbank, die verwendet werden soll.
+  username: root        # Benutzername für die Datenbankverbindung.
+  password: passwort    # Passwort für die Datenbankverbindung.
+
+# Einstellungen für das Punktesystem.
+points:
+  decay:
+    enable: true        # Aktiviert oder deaktiviert den Punkteverfall.
+    interval_days: 30   # Anzahl der Tage, nach denen Punkte verfallen.
+    amount: 2           # Anzahl der Punkte, die nach Ablauf des Intervalls abgezogen werden.
+  multiplier:
+    enable: true        # Aktiviert oder deaktiviert den Bestrafungsmultiplikator.
+    threshold: 10       # Ab wie vielen Punkten der Multiplikator angewendet wird.
+    value: 2.0          # Wert des Multiplikators (z.B. 2.0 verdoppelt die Dauer).
+  extra_ban:
+    enable: true        # Aktiviert oder deaktiviert die zusätzliche Bannzeit.
+    threshold: 15       # Ab wie vielen Punkten die zusätzliche Bannzeit hinzugefügt wird.
+    duration: '15d'     # Dauer der zusätzlichen Bannzeit (z.B. '15d' für 15 Tage).
+  extra_mute:
+    enable: true        # Aktiviert oder deaktiviert die zusätzliche Mute-Zeit.
+    threshold: 15       # Ab wie vielen Punkten die zusätzliche Mute-Zeit hinzugefügt wird.
+    duration: '7d'      # Dauer der zusätzlichen Mute-Zeit (z.B. '7d' für 7 Tage).
+  punishments:
+    warn: 1             # Punkte, die für eine Verwarnung vergeben werden.
+    kick: 2             # Punkte, die für einen Kick vergeben werden.
+    mute: 3             # Punkte, die für einen Mute vergeben werden.
+    ban_default: 5      # Standardpunkte für einen Bann (falls keine spezifischen Punkte angegeben werden).
+
+# Einstellungen für den /tban-Befehl (temporärer Bann mit vordefinierten Gründen).
+tban:
+  enable: true          # Aktiviert oder deaktiviert den /tban-Befehl.
+  reasons:
+    '1':
+      reason: 'Hacking'          # Grund für die Bestrafung.
+      duration: '30d'            # Dauer der Bestrafung (z.B. '30d' für 30 Tage).
+      points: 8                  # Punkte, die für diese Bestrafung vergeben werden.
+      ban_immediately: true      # Ob der Spieler sofort gebannt werden soll.
+    '2':
+      reason: 'Reportmissbrauch'
+      duration: '1d'
+      points: 2
+      ban_immediately: false
+    '3':
+      reason: 'Bugusing'
+      duration: '7d'
+      points: 5
+      ban_immediately: true
+    '4':
+      reason: 'Unzulässiger Alt-Account'
+      duration: '7d'
+      points: 4
+      ban_immediately: false
+    '5':
+      reason: 'Bannumgehung'
+      duration: 'Permanent'       # Permanente Bestrafung.
+      points: 10
+      ban_immediately: true
+    '6':
+      reason: 'Unangemessene Bauwerke'
+      duration: '7d'
+      points: 3
+      ban_immediately: false
+    '7':
+      reason: 'Belästigung/Beleidigung'
+      duration: '3d'
+      points: 3
+      ban_immediately: false
+    '8':
+      reason: 'Sicherheitsbann - Bitte melde dich umgehend im Support'
+      duration: 'Permanent'
+      points: 0
+      ban_immediately: true

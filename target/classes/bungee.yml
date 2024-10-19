@@ -1,0 +1,66 @@
+name: CozyBan
+main: de.janoschbl.cozy.Main
+version: 1.1.0
+author: janoschbl
+softDepends:
+  - Geyser-Bungeecord
+  - floodgate
+commands:
+  cozyban:
+    description: Verwaltung des CozyBan-Plugins
+    permission: cozyban.use
+  ban:
+    description: Bannt einen Spieler
+    permission: ban.use
+  mute:
+    description: Mute einen Spieler
+    permission: mute.use
+  warn:
+    description: Verwarnt einen Spieler
+    permission: warn.use
+  kick:
+    description: Kickt einen Spieler
+    permission: kick.use
+  tban:
+    description: Temporäres Bannen eines Spielers
+    permission: tban.use
+  history:
+    description: Zeigt die Historie eines Spielers an
+    permission: history.use
+  unban:
+    description: Entbannt einen Spieler
+    permission: unban.use
+  unmute:
+    description: Entmutet einen Spieler
+    permission: unmute.use
+permissions:
+  cozyban.use:
+    description: Erlaubt die Nutzung des CozyBan-Befehls
+    default: op
+  ban.use:
+    description: Erlaubt das Bannen von Spielern
+    default: op
+  mute.use:
+    description: Erlaubt das Muting von Spielern
+    default: op
+  warn.use:
+    description: Erlaubt das Verwarnen von Spielern
+    default: op
+  kick.use:
+    description: Erlaubt das Kicken von Spielern
+    default: op
+  tban.use:
+    description: Erlaubt das temporäre Bannen von Spielern
+    default: op
+  history.use:
+    description: Erlaubt das Anzeigen der Historie von Spielern
+    default: op
+  adminpoints.use:
+    description: Erlaubt das Verwalten der Punkte von Spielern
+    default: op
+  unban.use:
+    description: Erlaubt das Entbannen von Spielern
+    default: op
+  unmute.use:
+    description: Erlaubt das Entmuten von Spielern
+    default: op

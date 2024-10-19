@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="maven-antrun-" default="main">
+  <target name="main">
+    <copy file="C:\Users\Janosch\Documents\GitHub\CozyBan\target/cozyban-1.0-SNAPSHOT.jar" tofile="C:/Users/Janosch/Desktop/bungeecord/plugins/cozyban-1.0-SNAPSHOT.jar" overwrite="true" />
+  </target>
+</project>

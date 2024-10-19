@@ -1,0 +1,104 @@
+# Dies ist die Nachrichtenkonfigurationsdatei für das CozyBan-Plugin.
+# Hier können alle Nachrichten angepasst werden, die das Plugin ausgibt.
+# Platzhalter in den Nachrichten werden mit Prozentzeichen umschlossen, z.B. %player%.
+
+no-permission: '&7Du hast keine Berechtigung, diesen Befehl zu verwenden.'
+
+# Erfolgsnachrichten für verschiedene Bestrafungen.
+ban-success: '&7Der Spieler &c%player% &7wurde für &e%duration% &7gebannt. &7Punkte: &c%points% &7Gesamtpunkte: &c%totalpoints%.'
+mute-success: '&7Der Spieler &c%player% &7wurde für &e%duration% &7gemutet. &7Punkte: &c%points% &7Gesamtpunkte: &c%totalpoints%.'
+warn-success: '&7Der Spieler &c%player% &7wurde verwarnt. &7Punkte: &c%points% &7Gesamtpunkte: &c%totalpoints%.'
+kick-success: '&7Der Spieler &c%player% &7wurde gekickt. &7Punkte: &c%points% &7Gesamtpunkte: &c%totalpoints%.'
+unmute-success: '&7Der Spieler &c%player% &7wurde entmutet.'
+unban-success: '&7Der Spieler &c%player% &7wurde entbannt.'
+
+# CozyBan Command Nachrichten
+setpoints-success: '&7Die Punkte von &c%player% &7wurden auf &c%points% &7geändert.'
+getpoints-success: '&c%player%&7 hat &c%points% &7Punkte.'
+addpoints-success: '&c&c%points% &7Punkte wurden &c%player% &7hinzugefügt.'
+removepoints-success: '&c&c%points% &7Punkte wurden von &c%player% &7entfernt.'
+points-set-invalid: '&7Ungültige Punktzahl angegeben.'
+points-get-invalid: '&7Spieler nicht gefunden oder hat keine Punkte.'
+points-add-invalid: '&7Ungültige Punktzahl angegeben.'
+points-remove-invalid: '&7Ungültige Punktzahl angegeben.'
+points-usage-set: '&7Verwendung: /cozyban &csetPoints &7<Spieler> <Punkte>'
+points-usage-get: '&7Verwendung: /cozyban &cgetPoints &7<Spieler>'
+reload-config-error: '&7Fehler beim Neuladen der Konfiguration.'
+
+# Nachrichten, die dem Spieler bei Bestrafungen angezeigt werden.
+ban-message: |
+  &8&l---------------------------------------------
+  &cDu wurdest gebannt!
+  &7Grund: &e%reason%
+  &7Dauer: &e%duration%
+  &7Gebannt von: &e%punisher%
+  &7Gebannt am: &e%date%
+  &7Punkte erhalten: &c%points%
+  &7Gesamtpunkte: &c%totalpoints%
+  &8&l---------------------------------------------
+
+mute-message: |
+  &8&l---------------------------------------------
+  &cDu wurdest gemutet!
+  &7Grund: &e%reason%
+  &7Gemutet von: &e%punisher%
+  &7Gemutet am: &e%date%
+  &7Dauer: &e%duration%
+  &7Punkte erhalten: &c%points%
+  &7Gesamtpunkte: &c%totalpoints%
+  &8&l---------------------------------------------
+
+warn-message: |
+  &8&l---------------------------------------------
+  &cDu wurdest verwarnt!
+  &7Grund: &e%reason%
+  &7Verwarnt von: &e%punisher%
+  &7Verwarnt am: &e%date%
+  &7Punkte erhalten: &c%points%
+  &7Gesamtpunkte: &c%totalpoints%
+  &8&l---------------------------------------------
+
+kick-message: |
+  &8&l---------------------------------------------
+  &cDu wurdest gekickt!
+  &7Grund: &e%reason%
+  &7Gekickt von: &e%punisher%
+  &7Punkte erhalten: &c%points%
+  &7Gesamtpunkte: &c%totalpoints%
+  &8&l---------------------------------------------
+
+# Nachricht, die einem gebannten Spieler beim Verbindungsversuch angezeigt wird.
+ban-format: |
+  &8&l---------------------------------------------
+  &cDu bist gebannt!
+  &7Grund: &e%reason%
+  &7Dauer: &e%duration%
+  &7Gebannt von: &e%punisher%
+  &7Gebannt am: &e%date%
+  &7Verbleibende Zeit: &e%remaining%
+  &8&l---------------------------------------------
+
+# Nachricht, die einem gemuteten Spieler angezeigt wird, wenn er versucht zu chatten.
+mute-format: |
+  &8&l---------------------------------------------
+  &cDu bist gemutet!
+  &7Grund: &e%reason%
+  &7Dauer: &e%duration%
+  &7Gemutet von: &e%punisher%
+  &7Gemutet am: &e%date%
+  &7Verbleibende Zeit: &e%remaining%
+  &8&l---------------------------------------------
+
+# Eintrag für die Bestrafungshistorie eines Spielers.
+history-entry: |
+  &8[&7%date%&8] &7%type% &8- &7%reason% &8- &7Von: &c%punisher% &8- &7Dauer: &e%duration% &8- %status%
+
+# Hilfe-Nachrichten
+help-header: '&8&l----- [&c&lCozyBan Hilfe&8&l] -----'
+help-enable: '  &7[&c+&7] &7/cozyban &cenable &7- Aktiviert das Plugin'
+help-disable: '  &7[&c+&7] &7/cozyban &cdisable &7- Deaktiviert das Plugin'
+help-reload: '  &7[&c+&7] &7/cozyban &creload &7- Lädt die Konfiguration neu'
+help-setpoints: '  &7[&c+&7] &7/cozyban &csetPoints <Spieler> <Punkte> &7- Setzt die Punkte eines Spielers'
+help-getpoints: '  &7[&c+&7] &7/cozyban &cgetPoints <Spieler> &7- Zeigt die Punkte eines Spielers an'
+help-help: '  &7[&c+&7] &7/cozyban &chelp &7- Zeigt diese Hilfenachricht an'
+help-footer: '&8&l------------------------------'
