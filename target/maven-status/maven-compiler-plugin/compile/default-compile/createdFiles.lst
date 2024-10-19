@@ -3,6 +3,7 @@ de\janoschbl\cozy\utils\UUIDFetcher.class
 de\janoschbl\cozy\utils\MessageUtils.class
 de\janoschbl\cozy\Main.class
 de\janoschbl\cozy\commands\KickCommand.class
+de\janoschbl\cozy\listeners\TabCompleteListener.class
 de\janoschbl\cozy\commands\HistoryCommand.class
 de\janoschbl\cozy\managers\DatabaseManager.class
 de\janoschbl\cozy\commands\WarnCommand.class

@@ -9,6 +9,7 @@ C:\Users\Janosch\Documents\GitHub\CozyBan\src\main\java\de\janoschbl\cozy\comman
 C:\Users\Janosch\Documents\GitHub\CozyBan\src\main\java\de\janoschbl\cozy\commands\WarnCommand.java
 C:\Users\Janosch\Documents\GitHub\CozyBan\src\main\java\de\janoschbl\cozy\listeners\ChatListener.java
 C:\Users\Janosch\Documents\GitHub\CozyBan\src\main\java\de\janoschbl\cozy\listeners\LoginListener.java
+C:\Users\Janosch\Documents\GitHub\CozyBan\src\main\java\de\janoschbl\cozy\listeners\TabCompleteListener.java
 C:\Users\Janosch\Documents\GitHub\CozyBan\src\main\java\de\janoschbl\cozy\Main.java
 C:\Users\Janosch\Documents\GitHub\CozyBan\src\main\java\de\janoschbl\cozy\managers\ConfigManager.java
 C:\Users\Janosch\Documents\GitHub\CozyBan\src\main\java\de\janoschbl\cozy\managers\DatabaseManager.java
